@@ -1,0 +1,139 @@
+.plan{
+    padding-top: 60px;
+    .inner{
+
+    }
+
+}
+
+.rec{
+    .rec-slick{
+        padding-top: 60px;
+    }
+    .rec-item{
+        flex-flow: column-reverse;
+        border-radius: 8px;
+        overflow: hidden;
+        display: flex;
+        margin-left: 70px;
+        margin-right: 70px;
+        @include overTab{
+            margin-right: 28px;
+            margin-left: 28px;
+            
+        }
+        .text{
+            padding: 25px 55px 50px;
+            @include overTab{
+                padding-top: 25px;
+                padding-left: 25px;
+                padding-right: 25px;
+                padding-bottom: 50px;
+
+            }
+            background-color: cl(white);
+
+        }
+        .title{
+            font-size: 24px;
+            @include overTab{
+                font-size: 16px;
+
+            }
+            color: cl(text);
+
+        }
+        .price{
+            font-size: 24px;
+            margin-top: 135px;
+            @include overTab{
+                font-size: 14px;
+                padding-top: 65px;
+
+            }
+            color: cl(text);
+            > span {
+                color: cl(red);
+            }
+        }
+        .image{
+        }
+    }
+}
+
+.service{
+    .service-wrap{
+        padding-top: 75px;
+        @include overTab{
+
+            padding-top: 95px;
+        }
+    }
+    .service-list{
+        padding-right: 70px;
+        padding-left: 70px;
+        @include overTab{
+            display: flex;
+            
+        }
+    }
+    .service-item{
+        + .service-item{
+            margin-top: 55px;
+            @include overTab{
+                margin-top: 0;
+            }
+        }
+        background-color: cl(white);
+        opacity: 0.9;
+        width: 100%;
+        display: flex;
+        flex-flow: column-reverse;
+        padding-top: 20px;
+        padding-bottom: 60px;
+        @include overTab{
+            width: percentage(390 / 1220);
+            padding: 0;
+        }
+        + .service-item{
+            @include overTab{
+
+                margin-left: 30px;
+            }
+        }
+        .text{
+            color: cl(text);
+            padding-left: 55px;
+            padding-right: 55px;
+            @include overTab{
+                padding: 0 23px 50px;
+
+            }
+        }
+        .title{
+            font-size: 40px;
+            @include overTab{
+                font-size: 28px;
+
+            }
+            text-align: center;
+        }
+        .desc{
+            font-size: 24px;
+            padding-top: 30px;
+            @include overTab{
+                padding-top: 40px;
+                font-size: 18px;
+
+            }
+        }
+        .image{
+            width: 220px;
+            margin: 0 auto;
+            @include overTab{
+                width: 160px;
+
+            }
+        }
+    }
+}

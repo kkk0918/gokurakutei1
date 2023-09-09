@@ -1,0 +1,90 @@
+.features{
+    padding-top: 60px;
+    .inner{
+
+    }
+    .features-cont{
+
+    }
+    .features-list{
+        margin-top: 60px;
+    }
+    .features-item{
+        display: flex;
+        flex-flow: column-reverse;
+        + .features-item{
+            padding-top: 75px;
+        }
+        @include overTab{
+            
+        }
+        &:nth-child(odd){  // odd=奇数 even=偶数
+            @include overTab{
+                flex-flow: row-reverse;
+            }
+            .text{
+                @include overTab{
+                    margin-right: 70px;
+                }
+            }
+            .image{
+                @include overTab{
+                    margin-right: 55px;
+                }
+            }
+        }
+        &:nth-child(even){
+            @include overTab{
+
+                flex-flow: row;
+            }
+            .text{
+                @include overTab{
+                    margin-left: 70px;
+                }
+            }
+            .image{
+                @include overTab{
+
+                    margin-left: 55px;
+                }
+            }
+        }
+        .text{
+            color: cl(white);
+            flex: 1;
+            padding-right: 95px;
+            padding-left: 95px;
+            @include overTab{
+                padding: 0;
+            }
+        }
+        .title{
+            font-size: 28px;
+            margin-top: 45px;
+            color: cl(baige);
+        }
+        .desc{
+            font-size: 18px;
+            margin-top: 50px;
+        }
+        .image{
+            width: 100%;
+            @include overTab{
+
+                width: percentage(683 / 1366);
+            }
+        }
+    }
+    .features-link{
+        padding-top: 62px;
+        @include overTab{
+            padding-top: 70px;
+            padding-bottom: 65px;
+
+        }
+        a{
+            margin: 0 auto;
+        }
+    }
+}

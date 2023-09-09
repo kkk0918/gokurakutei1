@@ -1,0 +1,68 @@
+.blog{
+    padding-top: 60px;
+    .inner{
+
+    }
+    .sub{
+        
+    }
+    .blog-cont{
+        margin-left: 75px;
+        margin-right: 60px;
+        @include overTab{
+            margin-right: 110px;
+            margin-left: 110px;
+
+        }
+    }
+    .blog-list{
+        padding-top: 60px;
+        .row{
+            display: flex;
+            @include overTab{
+                align-items: center;
+
+            }
+            + .row{
+                margin-top: 25px;
+            }
+            dt{
+                color: cl(white);
+                display: flex;
+                background-color: cl(primary);
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                width: 92px;
+                height: 32px;
+                @include overTab{
+                    width: 157px;
+                    height: 32px;
+                    
+                }
+            }
+            dd{
+                margin-left: 15px;
+                flex: 1;
+                @include overTab{
+                    margin-left: 30px;
+
+                }
+                a{
+                    color: cl(white);
+                    font-size: 24px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    .blog-link{
+        padding-top: 70px;
+        @include overTab{
+            padding-top: 110px;
+        }
+        a{
+            margin: 0 auto;
+        }
+    }
+}
